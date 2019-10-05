@@ -1,6 +1,6 @@
 # Install
 - docker-compose.yml
-````yml
+```yml
 version: '3'
 services:
   redis:
