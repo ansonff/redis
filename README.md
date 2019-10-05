@@ -9,6 +9,6 @@ services:
       - "6379:6379"
 ```
 
-```shell
+```bash
 docker-compose up -d
 ```
