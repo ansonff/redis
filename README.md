@@ -8,6 +8,7 @@ services:
     ports:
       - "6379:6379"
 ```
+
 ```shell
 docker-compose up -d
 ```
