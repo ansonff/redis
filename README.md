@@ -28,3 +28,7 @@ docker-compose up -d
 redis-bash-cli -h localhost SET testkey 1234
 redis-bash-cli -h localhost GET testkey
 ```
+
+Another Redis Clients
+- https://redislabs.com/blog/so-youre-looking-for-the-redis-gui
+- https://rdbtools.com/docs/install/linux/
