@@ -5,7 +5,7 @@
 - protected-mode no
 
 - docker-compose.yml
-```yml
+```yaml
 version: '3'
 
 services:
@@ -27,6 +27,11 @@ docker-compose up -d
 ```shell
 redis-bash-cli -h localhost SET testkey 1234
 redis-bash-cli -h localhost GET testkey
+```
+
+# Build your own redis image
+```shell
+docker build -t my-redis . --no-cache
 ```
 
 # Another Redis Clients
