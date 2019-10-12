@@ -24,13 +24,13 @@ docker-compose up -d
 
 # Test
 - https://github.com/caquino/redis-bash
-```shell
+```console
 redis-bash-cli -h localhost SET testkey 1234
 redis-bash-cli -h localhost GET testkey
 ```
 
 # Build your own redis image
-```shell
+```console
 docker build -t my-redis . --no-cache
 ```
 
