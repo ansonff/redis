@@ -18,3 +18,7 @@ redis-cli HGETALL myhash1
 ### [Set] add a set
 redis-cli SADD "key" "value"
 redis-cli SPOP "key"
+
+
+### Refernce
+- https://redis.io/commands
