@@ -1,3 +1,9 @@
+### delete all keys from all Redis databases
+redis-cli FLUSHALL
+
+### delete all keys of the currently selected Redis database:
+redis-cli FLUSHDB
+
 ### login to your redis inside docker
 docker exec -it redis1 bash
 
