@@ -1,3 +1,6 @@
+### list all keys
+redis-cli KEYS "*"
+
 ### delete all keys from all Redis databases
 redis-cli FLUSHALL
 
