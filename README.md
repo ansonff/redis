@@ -27,6 +27,7 @@ docker-compose up -d
 ```console
 redis-bash-cli -h localhost SET testkey 1234
 redis-bash-cli -h localhost GET testkey
+redis-bash-cli -h localhost KEYS '*'
 ```
 
 ### Build your own redis image
