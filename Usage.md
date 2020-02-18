@@ -1,3 +1,6 @@
+### enter commandline of redis in docker
+docker exec -it redis1 redis-cli -a cache123
+
 ### list all keys
 redis-cli KEYS "*"
 
