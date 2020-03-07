@@ -7,10 +7,10 @@
 - unwatch: unwatch all the watched keys
 
 # Other atomic commands
-GETSET
-SETNX
-MSETNX
-INCR
+- GETSET
+- SETNX
+- MSETNX
+- INCR
 
 
 # Demo
