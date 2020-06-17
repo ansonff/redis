@@ -3,6 +3,7 @@ docker exec -it redis1 redis-cli -a cache123
 
 ### list all keys
 redis-cli KEYS "*"
+redis-cli --cluster call localhost:7002 KEYS "*"
 
 ### delete all keys from all Redis databases
 redis-cli FLUSHALL
