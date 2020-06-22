@@ -13,6 +13,13 @@ redis-cli FLUSHDB
 
 ### delete by key pattern
 redis-cli KEYS "prefix:*" | xargs redis-cli DEL
+/home/appadmin/service/redis/compile/redis/src/redis-cli -p 7001 -a cache123 -c KEYS "prefix:*" |\
+  xargs \
+  /home/appadmin/service/redis/compile/redis/src/redis-cli -p 7001 -a cache123 -c del
+  
+/home/appadmin/service/redis/compile/redis/src/redis-cli -p 7001 -a cache123 -c \
+  KEYS "{\"TicketDataKey\":{\"ticketId\":\"*\"}}" | xargs \
+  /home/appadmin/service/redis/compile/redis/src/redis-cli -p 7001 -a cache123 -c del
 
 ### login to your redis inside docker
 docker exec -it redis1 bash
