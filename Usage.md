@@ -11,6 +11,9 @@ redis-cli FLUSHALL
 ### delete all keys of the currently selected Redis database:
 redis-cli FLUSHDB
 
+### delete key
+redis-cli -c del {\"TicketDataKey\":{\"ticketId\":\"9CC965000002000000\"}}
+
 ### delete by key pattern
 redis-cli KEYS "prefix:*" | xargs redis-cli DEL
 /home/appadmin/service/redis/compile/redis/src/redis-cli -p 7001 -a cache123 -c KEYS "prefix:*" |\
